@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-weight: normal;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body .container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 960px) {
+  body .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body .container {
+    width: 80%;
+  }
+}
+
+.btn {
+  padding: 14px;
+  height: 40px;
+  width: 150px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-rounded {
+  border-radius: 20px;
+}
+
+.btn-rounded:hover {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white !important;
+}
+
+#card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background-color: #19a2ae;
+}
+
+#card:before {
+  content: '';
+  background: url("../../icons/bg-pattern-top.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 50%;
+}
+
+#card:after {
+  content: url(../../icons/bg-pattern-bottom.svg);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 50%;
+  width: 50%;
+}
+
+#card .card {
+  border-radius: 20px;
+  overflow: hidden;
+  width: 90%;
+  background-color: white;
+}
+
+#card .card .card-body {
+  width: 100%;
+}
+
+#card .card .card-body .user {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 100px 0 40px;
+}
+
+#card .card .card-body .user .avatar {
+  position: absolute;
+  top: -50px;
+  border-radius: 50%;
+  border: 8px solid white;
+}
+
+#card .card .card-body .user .user-desc {
+  text-align: center;
+}
+
+#card .card .card-body .user .user-desc span {
+  font-weight: 400;
+  color: #969696;
+}
+
+#card .card .card-body .user .user-desc h1 {
+  font-size: 18px;
+  color: #2d3248;
+  font-weight: 700;
+}
+
+#card .card .card-body .user .user-desc p {
+  margin-top: 14px;
+  color: #969696;
+}
+
+#card .card .card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 40px;
+  border: none;
+  border-top: 0.5px solid #dedede;
+}
+
+#card .card .card-footer .section-card-footer {
+  width: 33.3%;
+  text-align: center;
+}
+
+#card .card .card-footer .section-card-footer h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2d3248;
+}
+
+#card .card .card-footer .section-card-footer p {
+  margin-top: 6px;
+  color: #969696;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+@media only screen and (min-width: 960px) {
+  #card .card {
+    width: 30% !important;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
