@@ -18,6 +18,12 @@ body .container {
   margin-right: auto;
 }
 
+@media only screen and (min-width: 768px) {
+  body .container {
+    width: 90%;
+  }
+}
+
 @media only screen and (min-width: 960px) {
   body .container {
     width: 80%;
@@ -69,20 +75,23 @@ body .container {
           align-items: center;
   height: 100vh;
   background-color: #19a2ae;
+  overflow: hidden;
 }
 
 #card:before {
   content: '';
-  background: url("../../icons/bg-pattern-top.svg");
+  background: url(../icons/bg-pattern-top.svg);
   position: absolute;
   top: 0;
   left: 0;
   height: 50%;
   width: 50%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 #card:after {
-  content: url(../../icons/bg-pattern-bottom.svg);
+  content: url(../icons/bg-pattern-bottom.svg);
   position: absolute;
   bottom: 0;
   right: 0;

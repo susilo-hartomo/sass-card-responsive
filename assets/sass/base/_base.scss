@@ -17,6 +17,7 @@ body {
 
 	@include for-phone {
 		.container {
+			width: 90%;
 		}
 	}
 

@@ -5,19 +5,21 @@
 	align-items: center;
 	height: 100vh;
 	background-color: $clr-dark-cyan;
+	overflow: hidden;
 
 	&:before {
 		content: '';
-		background: url('../../icons/bg-pattern-top.svg');
+		background: url(../icons/bg-pattern-top.svg);
 		position: absolute;
 		top: 0;
 		left: 0;
 		height: 50%;
 		width: 50%;
+		transform: rotate(180deg);
 	}
 
 	&:after {
-		content: url(../../icons/bg-pattern-bottom.svg);
+		content: url(../icons/bg-pattern-bottom.svg);
 		position: absolute;
 		bottom: 0;
 		right: 0;
